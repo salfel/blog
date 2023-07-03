@@ -3,10 +3,12 @@ export default {
 	content: ['./resources/js/**/*.{svelte,js}'],
 	theme: {
 		extend: {
-		
+			width: {
+				120: '30rem',
+			}
 		},
 	},
-	plugins: [require('daisyui'), require('@tailwindcss/typography')],
+	plugins: [require('daisyui'), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')],
 	daisyui: {
 		themes: [
 			"light",

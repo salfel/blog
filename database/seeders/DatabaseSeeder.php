@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         
         $user = User::factory()->create();
 
-        foreach(range(1, 2) as $i) {
+        foreach(range(1, 100) as $i) {
             $blog = Blog::factory()->create([
                 'author_id' => $user->id
             ]);

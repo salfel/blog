@@ -19,7 +19,6 @@ class BlogFactory extends Factory
         // intellephense wrong here
         return [
             'title' => fake()->words(3, true),
-            'thumbnail' => fake()->imageUrl(),
             'description' => fake()->paragraph(2), 
             'tags' => str_replace(' ', ',', fake()->words(2, true))
         ];

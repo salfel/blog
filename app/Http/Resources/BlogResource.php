@@ -18,10 +18,10 @@ class BlogResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
-            'thumbnail' => $this->thumbnail,
             'tags' => $this->tags,
             'author' => new UserResource($this->author),
             'paragraphs' => ParagraphResource::collection($this->paragraphs),
+            'created_at' => $this->created_at,
         ];
     }
 }
