@@ -21,8 +21,8 @@
     },
     "dependencies": {
         "@inertiajs/svelte": "^1.0.9",
+        "@inqling/svelte-icons": "^3.3.2",
         "@sveltejs/vite-plugin-svelte": "^2.4.2",
-        "@tailwindcss/line-clamp": "^0.4.4",
         "svelte": "^4.0.1",
         "svelte-preprocess": "^5.0.4"
     }

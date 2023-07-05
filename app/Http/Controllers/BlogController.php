@@ -13,15 +13,15 @@ class BlogController extends Controller
         if ($request->has('q')) {
             $pagination = Blog::search($request->q)->query(function (Builder $query) {
                 $query->with('author');
-            })->paginate(9);
+            })->paginate(9)->appends(['query' => null, 'q' => $request->get('q')]);
         }
         else {
-            $pagination = Blog::with('author')->paginate(9);;
+            $pagination = Blog::with('author')->paginate(9);
         }
 
         return Inertia::render('Home', [
-            'pagination' => $pagination,
-            'blogs' => $pagination->items()
+            'blogs' => $pagination->items(),
+            'pagination' => $pagination
         ]);
     }
 }

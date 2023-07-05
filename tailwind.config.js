@@ -8,7 +8,7 @@ export default {
 			}
 		},
 	},
-	plugins: [require('daisyui'), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')],
+	plugins: [require('daisyui'), require('@tailwindcss/typography')],
 	daisyui: {
 		themes: [
 			"light",
